@@ -7,6 +7,11 @@ pipeline {
             steps {
                 sh 'node --version'
             }
+         
+             steps {
+                sh  '/root/.local/bin/anchore-cli image list'
+            }
+
         }
     }
 }
